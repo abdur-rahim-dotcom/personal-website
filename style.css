@@ -1,0 +1,278 @@
+/* basic style for all  */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section,
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.half-width {
+  float: left;
+  width: 45%;
+  padding: 1%;
+}
+
+.half-width:last-of-type {
+  margin-left: 6%;
+}
+
+h2 {
+  color: #202428;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+p {
+  color: #707070;
+  font-size: 14px;
+  line-height: 150%;
+}
+p::selection {
+  background-color: #6aeacc;
+  color: white;
+}
+
+.half-width img {
+  width: 80%;
+}
+
+.img-side {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.text-side {
+  margin-top: 170px;
+  margin-bottom: 170px;
+}
+/* css for some anchor tag  */
+.top-area .right-side-content a,
+.biography-area a,
+.work-area a,
+.client-area .email-button a {
+  background-image: linear-gradient(45deg, #ec5095, #ed4b70);
+  padding: 10px 22px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.top-area .right-side-content a:hover,
+.biography-area a:hover,
+.work-area a:hover,
+.client-area .email-button a:hover {
+  background-image: linear-gradient(#f4a031, #fbcf33);
+}
+/* css for social area  */
+
+#social-area {
+  list-style: none;
+  right: 20px;
+  top: 25%;
+  position: fixed;
+}
+
+#social-area img {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+/* css for top area  */
+.top-area {
+  background: url(images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.top-area h2 {
+  margin-bottom: 10px;
+}
+
+.top-area h1 {
+  color: #ec4c7a;
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.top-area .right-side-content {
+  margin-left: 50px;
+}
+
+/* css for biography area  */
+.biography-area {
+  background-image: url(images/biography-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* css for latest work area  */
+.work-area {
+  background-image: url(images/latest-work-bg.png);
+  background-size: 100%;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+}
+
+.work-area h2 {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+
+.work-area img {
+  width: 31%;
+  margin-left: 3%;
+  transition: 1s;
+}
+
+.work-area img:first-of-type {
+  margin-left: 0;
+}
+/* css for latest do area  */
+.do-area {
+  background-image: url(images/biography-bg.png);
+  background-size: 100%;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.do-area h2 {
+  margin-bottom: 80px;
+}
+.do-area .do-single h3 {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.do-area .do-single {
+  width: 31%;
+  margin-left: 3%;
+  float: left;
+}
+
+.do-area .do-single:first-of-type {
+  margin-left: 0;
+}
+
+/* css for client area  */
+.client-area {
+  background-image: url(images/footer-bg.png);
+  background-size: 100%;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.client-area .brucce {
+  width: 40%;
+  margin: 50px auto;
+}
+
+.client-area .brucce p {
+  color: black;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.client-area h2 {
+  margin-bottom: 80px;
+}
+
+.client-area .brucce h4 {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.client-area .brucce h4 + p {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+.client-area .email-button {
+  background-image: linear-gradient(45deg, #ec5095, #ed4b70);
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  padding: 20px 0;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.client-area .email-button p {
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.client-area .email-button a {
+  text-decoration: none;
+  margin-top: 0;
+  font-size: 18px;
+  padding: 10px 70px;
+}
+/* css for footer area  */
+footer p {
+  text-align: center;
+  padding: 10px 0;
+}
+/* css for email form  */
+.form-area {
+  background: url(images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+.form-area .form {
+  margin: 100px auto;
+  width: 80%;
+}
+.form-area .form input {
+  width: 50%;
+  height: 40px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #ccc;
+}
+.form-area .form textarea {
+  text-align: center;
+  padding-top: 10px;
+  color: grey;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.form-area .form a {
+  width: 10%;
+  background: #f6f8fd;
+  margin-top: 15px;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 15px;
+}
+.form-area .form a:hover {
+  background: grey;
+  color: white;
+}
